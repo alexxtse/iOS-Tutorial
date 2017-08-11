@@ -1,0 +1,30 @@
+.gitbook-link {
+    display: none !important
+}
+
+.markdown-section strong {
+    color: #FF8C10
+}
+
+.markdown-section a {
+    color: #348FF8
+}
+
+.markdown-section img {
+    margin: 0 auto;
+    display: block;
+}
+
+.book-summary ul.summary {
+	font-size: 1.2em;
+	font-weight: 500;
+}
+
+.book-summary ul.summary li a {
+	color: #2b2f31
+}
+
+.markdown-section p code {
+	color: #f7860d;
+	font-weight: 600;
+}
