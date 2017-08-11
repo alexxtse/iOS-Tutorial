@@ -4,6 +4,8 @@
 
 如果有翻译错误的地方，可在 issues 提出，或发送邮件到 [oxiemin@gmail.com](mailto:oxiemin@gmail.com)
 
+在线查阅地址：[http://xiemin.me/ios-tutorial/](http://xiemin.me/ios-tutorial/)
+
 ---
 
 #### 关于我 🙂
@@ -16,8 +18,8 @@
 
 欢迎对鄙人支持，有你们的支持才能交出好的答卷。
 
-<img src="http://xiemin.me/ios-tutorial/assets/wechat-qrcode.png" width="260px" style="display: inline" />
-<img src="http://xiemin.me/ios-tutorial/assets/alipay-qrcode.png" width="260px" style="display: inline" />
+<img src="http://xiemin.me/ios-tutorial/assets/wechat-qrcode.png" width="260px"/>
+<img src="http://xiemin.me/ios-tutorial/assets/alipay-qrcode.png" width="260px"/>
 
 
 
