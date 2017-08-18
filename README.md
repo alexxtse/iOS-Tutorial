@@ -4,8 +4,30 @@
 
 如果有翻译错误的地方，可在 issues 提出，或发送邮件到 [oxiemin@gmail.com](mailto:oxiemin@gmail.com)
 
-在线查阅地址：[http://xiemin.me/ios-tutorial/](http://xiemin.me/ios-tutorial/)
+在线查阅地址：
 
+[github.io](https://ixiemin.github.io/iOS-Tutorial/)
+
+[xiemin.me](http://xiemin.me/ios-tutorial/)
+
+---
+
+#### 目前翻译的内容 😎
+
+* Function
+
+	[iOS 实时流通讯](https://ixiemin.github.io/iOS-Tutorial/function/real-time-communication-with-streams-tutorial-for-ios.html)
+	
+* Map
+
+	[如何开发一个类似 Runkeeper 的 App 1/2](https://ixiemin.github.io/iOS-Tutorial/map/make-app-like-runkeeper-part-1-2.html)
+
+* Swift
+
+	[Swift 和函数式编程的遗产](https://ixiemin.github.io/iOS-Tutorial/swift/tryswift-rob-napier-swift-legacy-functional-programming.html)
+
+	[值语义(不是值类型)](https://ixiemin.github.io/iOS-Tutorial/swift/swift-gallagher-value-semantics.html)
+	
 ---
 
 #### 关于我 🙂

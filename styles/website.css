@@ -13,10 +13,11 @@
 .markdown-section img {
     margin: 0 auto;
     display: block;
+    border: 1px solid #e0e0e0;
 }
 
 .book-summary ul.summary {
-	font-size: 1.2em;
+	font-size: 1.1em;
 	font-weight: 500;
 }
 
@@ -26,5 +27,4 @@
 
 .markdown-section p code {
 	color: #f7860d;
-	font-weight: 600;
 }
