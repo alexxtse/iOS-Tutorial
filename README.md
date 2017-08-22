@@ -21,6 +21,8 @@
 * Map
 
 	[如何开发一个类似 Runkeeper 的 App 1/2](https://ixiemin.github.io/iOS-Tutorial/map/make-app-like-runkeeper-part-1-2.html)
+	
+	[如何开发一个类似 Runkeeper 的 App 2/2](https://ixiemin.github.io/iOS-Tutorial/map/make-app-like-runkeeper-part-2-2.html)
 
 * Swift
 

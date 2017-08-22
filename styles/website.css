@@ -25,6 +25,7 @@
 	color: #2b2f31
 }
 
-.markdown-section p code {
+.markdown-section p code,
+.markdown-section ul code {
 	color: #f7860d;
 }
