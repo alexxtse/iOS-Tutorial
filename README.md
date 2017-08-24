@@ -30,6 +30,8 @@
 
 	[值语义(不是值类型)](https://ixiemin.github.io/iOS-Tutorial/swift/swift-gallagher-value-semantics.html)
 	
+	[Swift 算法俱乐部：Boyer Moore 字符串搜索算法](https://ixiemin.github.io/iOS-Tutorial/swift/swift-algorithm-club-booyer-moore-string-search-algorithm.html)
+	
 ---
 
 ### 关于我 🙂
