@@ -6,7 +6,7 @@
 
 在线查阅地址：
 
-[github.io](https://ixiemin.github.io/iOS-Tutorial/)
+[github.io](https://alexxtse.github.io/iOS-Tutorial/)
 
 [xiemin.me](http://xiemin.me/ios-tutorial/)
 
@@ -16,21 +16,23 @@
 
 * Function
 
-	[iOS 实时流通讯](https://ixiemin.github.io/iOS-Tutorial/function/real-time-communication-with-streams-tutorial-for-ios.html)
+	[iOS 实时流通讯](https://alexxtse.github.io/iOS-Tutorial/function/real-time-communication-with-streams-tutorial-for-ios.html)
+	
+	[iOS 11 自动填充密码](https://alexxtse.github.io/iOS-Tutorial/function/ios-11-password-autofill.html)
 	
 * Map
 
-	[如何开发一个类似 Runkeeper 的 App 1/2](https://ixiemin.github.io/iOS-Tutorial/map/make-app-like-runkeeper-part-1-2.html)
+	[如何开发一个类似 Runkeeper 的 App 1/2](https://alexxtse.github.io/iOS-Tutorial/map/make-app-like-runkeeper-part-1-2.html)
 	
-	[如何开发一个类似 Runkeeper 的 App 2/2](https://ixiemin.github.io/iOS-Tutorial/map/make-app-like-runkeeper-part-2-2.html)
+	[如何开发一个类似 Runkeeper 的 App 2/2](https://alexxtse.github.io/iOS-Tutorial/map/make-app-like-runkeeper-part-2-2.html)
 
 * Swift
 
-	[Swift 和函数式编程的遗产](https://ixiemin.github.io/iOS-Tutorial/swift/tryswift-rob-napier-swift-legacy-functional-programming.html)
+	[Swift 和函数式编程的遗产](https://alexxtse.github.io/iOS-Tutorial/swift/tryswift-rob-napier-swift-legacy-functional-programming.html)
 
-	[值语义(不是值类型)](https://ixiemin.github.io/iOS-Tutorial/swift/swift-gallagher-value-semantics.html)
+	[值语义(不是值类型)](https://alexxtse.github.io/iOS-Tutorial/swift/swift-gallagher-value-semantics.html)
 	
-	[Swift 算法俱乐部：Boyer Moore 字符串搜索算法](https://ixiemin.github.io/iOS-Tutorial/swift/swift-algorithm-club-booyer-moore-string-search-algorithm.html)
+	[Swift 算法俱乐部：Boyer Moore 字符串搜索算法](https://alexxtse.github.io/iOS-Tutorial/swift/swift-algorithm-club-booyer-moore-string-search-algorithm.html)
 	
 ---
 
