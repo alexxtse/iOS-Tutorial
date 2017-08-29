@@ -26,6 +26,7 @@
 }
 
 .markdown-section p code,
-.markdown-section ul code {
+.markdown-section ul code,
+.markdown-section ol code {
 	color: #f7860d;
 }

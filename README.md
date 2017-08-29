@@ -14,6 +14,10 @@
 
 ### 目前翻译的内容 😎
 
+* Animation
+	
+	[如何使用 CAShapeLayer 实现圆形图像加载动画](https://alexxtse.github.io/iOS-Tutorial/animation/implement-circular-image-loader-animation-cashapelayer.html)
+
 * Function
 
 	[iOS 实时流通讯](https://alexxtse.github.io/iOS-Tutorial/function/real-time-communication-with-streams-tutorial-for-ios.html)
