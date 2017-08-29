@@ -1,0 +1,646 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>如何使用 CAShapeLayer 实现圆形图像加载动画 · iOS 教程, iOS Tutorial</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Alex Tse">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../function.html" />
+    
+    
+    <link rel="prev" href="../animation.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/ixiemin/iOS-Tutorial" target="_blank" class="custom-link">Alex Tse</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../animation.html">
+            
+                <a href="../animation.html">
+            
+                    
+                    Animation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="implement-circular-image-loader-animation-cashapelayer.html">
+            
+                <a href="implement-circular-image-loader-animation-cashapelayer.html">
+            
+                    
+                    如何使用 CAShapeLayer 实现圆形图像加载动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../function.html">
+            
+                <a href="../function.html">
+            
+                    
+                    Function
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../function/real-time-communication-with-streams-tutorial-for-ios.html">
+            
+                <a href="../function/real-time-communication-with-streams-tutorial-for-ios.html">
+            
+                    
+                    iOS 实时流通讯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../function/ios-11-password-autofill.html">
+            
+                <a href="../function/ios-11-password-autofill.html">
+            
+                    
+                    iOS 11 自动填充密码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../map.html">
+            
+                <a href="../map.html">
+            
+                    
+                    Map
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../map/make-app-like-runkeeper-part-1-2.html">
+            
+                <a href="../map/make-app-like-runkeeper-part-1-2.html">
+            
+                    
+                    如何开发一个类似 Runkeeper 的 App 1/2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../map/make-app-like-runkeeper-part-2-2.html">
+            
+                <a href="../map/make-app-like-runkeeper-part-2-2.html">
+            
+                    
+                    如何开发一个类似 Runkeeper 的 App 2/2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../swift.html">
+            
+                <a href="../swift.html">
+            
+                    
+                    Swift
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../swift/tryswift-rob-napier-swift-legacy-functional-programming.html">
+            
+                <a href="../swift/tryswift-rob-napier-swift-legacy-functional-programming.html">
+            
+                    
+                    Swift 和函数式编程的遗产
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../swift/swift-gallagher-value-semantics.html">
+            
+                <a href="../swift/swift-gallagher-value-semantics.html">
+            
+                    
+                    值语义(不是值类型)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../swift/swift-algorithm-club-booyer-moore-string-search-algorithm.html">
+            
+                <a href="../swift/swift-algorithm-club-booyer-moore-string-search-algorithm.html">
+            
+                    
+                    Swift 算法俱乐部：Boyer Moore 字符串搜索算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >如何使用 CAShapeLayer 实现圆形图像加载动画</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5982;&#x4F55;&#x4F7F;&#x7528;-cashapelayer-&#x5B9E;&#x73B0;&#x5706;&#x5F62;&#x56FE;&#x50CF;&#x52A0;&#x8F7D;&#x52A8;&#x753B;">&#x5982;&#x4F55;&#x4F7F;&#x7528; CAShapeLayer &#x5B9E;&#x73B0;&#x5706;&#x5F62;&#x56FE;&#x50CF;&#x52A0;&#x8F7D;&#x52A8;&#x753B;</h1>
+<p><a href="https://www.raywenderlich.com/166359/implement-circular-image-loader-animation-cashapelayer-2" target="_blank">&#x539F;&#x6587;&#x5730;&#x5740;</a> / &#x4F5C;&#x8005;&#xFF1A;Michael Katz</p>
+<p>&#x7FFB;&#x8BD1;&#x4E8E;&#xFF1A;2017/08/29&#xFF0C;Alex Tse</p>
+<hr>
+<pre><code>&#x6559;&#x7A0B;&#x7531; Michael Katz &#x66F4;&#x65B0;&#x652F;&#x6301; Xcode 9 beta / iOS 11 / Swift 4 
+&#x539F;&#x6559;&#x7A0B;&#x662F; Rounak Jain &#x7F16;&#x5199;
+</code></pre><p><img src="../assets/animation/circular-image-loader-animation-cashapelayer/CircularLoader-feature.png" alt=""></p>
+<p>&#x5F88;&#x4E45;&#x4E4B;&#x524D;&#xFF0C;Michael Villar &#x5728;&#x4ED6;&#x7684;<a href="http://www.michaelvillar.com/motion" target="_blank">&#x8FD0;&#x52A8;&#x5B9E;&#x9A8C;</a>&#x5E16;&#x5B50;&#x53D1;&#x5E03;&#x4E86;&#x4E00;&#x4E9B;&#x5341;&#x5206;&#x6709;&#x8DA3;&#x7684;&#x52A0;&#x8F7D;&#x52A8;&#x753B;&#x3002;</p>
+<p>GIF &#x7ED3;&#x5408;&#x4E86;&#x5706;&#x5F62;&#x6307;&#x793A;&#x7B26;&#x548C;&#x5706;&#x5F62;&#x63ED;&#x793A;&#x6548;&#x679C;&#x6765;&#x663E;&#x793A;&#x52A0;&#x8F7D;&#x52A8;&#x753B;&#x3002;&#x8FD9;&#x4E2A;&#x6548;&#x679C;&#x76F8;&#x5F53;&#x6709;&#x8DA3;&#xFF0C;&#x72EC;&#x7279;&#xFF0C;&#x751A;&#x81F3;&#x6709;&#x70B9;&#x8FF7;&#x4EBA;&#xFF01; :]</p>
+<p>&#x8FD9;&#x6B21; <code>CAShapeLayer</code> &#x7684;&#x6559;&#x7A0B;&#x5C06;&#x4F1A;&#x8BA9;&#x4F60;&#x5728; Swift &#x548C; Core Animation &#x91CD;&#x73B0;&#x8FD9;&#x4E2A;&#x6548;&#x679C;&#x3002;&#x5F00;&#x59CB;&#x5427;&#xFF01;</p>
+<h2 id="&#x5165;&#x95E8;">&#x5165;&#x95E8;</h2>
+<p>&#x5148;&#x4E0B;&#x8F7D;&#x6559;&#x7A0B;&#x7684;<a href="https://koenig-media.raywenderlich.com/uploads/2017/07/ImageLoaderIndicator-Starter-4.zip" target="_blank">&#x521D;&#x59CB;&#x4EE3;&#x7801;</a></p>
+<p>&#x82B1;&#x70B9;&#x65F6;&#x95F4;&#x9884;&#x89C8;&#x4E0B;&#x9879;&#x76EE;&#x5185;&#x5BB9;&#x548C;&#x7ED3;&#x6784;&#x3002;<code>ViewController</code> &#x6709;&#x4E00;&#x4E2A; <code>UIImageView</code> &#x7684;&#x5B50;&#x7C7B; <code>CustomImageView</code>&#xFF0C;&#x4F7F;&#x7528; <code>SDWebImage</code> &#x52A0;&#x8F7D;&#x56FE;&#x7247;&#x3002;&#x521D;&#x59CB;&#x9879;&#x76EE;&#x5DF2;&#x7ECF;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E9B; view &#x548C;&#x56FE;&#x7247;&#x52A0;&#x8F7D;&#x7684;&#x4EE3;&#x7801;&#x3002;</p>
+<p>&#x8FD0;&#x884C;&#x4E4B;&#x540E;&#xFF0C;&#x7A0D;&#x7B49;&#x4E00;&#x4F1A;&#x5C31;&#x80FD;&#x770B;&#x5230;&#x4E00;&#x5F20;&#x56FE;&#x7247;&#x51FA;&#x73B0;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#xFF1A;</p>
+<p><img src="../assets/animation/circular-image-loader-animation-cashapelayer/Screen-Shot-2017-08-14-at-1.18.11-PM.png" style="width:40%"></p>
+<p>&#x4F60;&#x5E94;&#x8BE5;&#x4F1A;&#x6CE8;&#x610F;&#x5230;&#x9996;&#x6B21;&#x8FD0;&#x884C; App &#x65F6;&#xFF0C;&#x56FE;&#x7247;&#x5728;&#x52A0;&#x8F7D;&#x8FC7;&#x7A0B;&#x4E2D; App &#x597D;&#x50CF;&#x6682;&#x505C;&#x4E86;&#x51E0;&#x79D2;&#x949F;&#xFF0C;&#x7136;&#x540E;&#x56FE;&#x7247;&#x53C8;&#x7A81;&#x7136;&#x7684;&#x51FA;&#x73B0;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x73B0;&#x5728;&#x8FD8;&#x6CA1;&#x6709;&#x52A0;&#x5706;&#x5F62;&#x8FDB;&#x5EA6;&#x63D0;&#x793A;&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A; <code>CAShapeLayer</code> &#x6559;&#x7A0B;&#x5B8C;&#x6210;&#x5B83;&#xFF01;</p>
+<p>&#x521B;&#x5EFA;&#x8FD9;&#x4E2A;&#x52A8;&#x753B;&#x6709;2&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x9636;&#x6BB5;&#xFF1A;</p>
+<ol>
+<li><strong>Circular progress</strong>&#x3002;&#x9996;&#x5148;&#xFF0C;&#x9700;&#x8981;&#x753B;&#x51FA;&#x4E00;&#x4E2A;&#x5706;&#x5F62;&#x8FDB;&#x5EA6;&#x6307;&#x793A;&#x7B26;&#xFF0C;&#x5E76;&#x6839;&#x636E;&#x4E0B;&#x8F7D;&#x7684;&#x8FDB;&#x5EA6;&#x6765;&#x66F4;&#x65B0;&#x5B83;&#x3002;</li>
+<li><strong>Expanding circular image</strong>&#x3002;&#x5176;&#x6B21;&#xFF0C;&#x5C06;&#x901A;&#x8FC7;&#x4E0D;&#x65AD;&#x6269;&#x5927;&#x7684;&#x5706;&#x5F62;&#x5708;&#x6765;&#x63ED;&#x793A;&#x4E0B;&#x8F7D;&#x5B8C;&#x6BD5;&#x7684;&#x56FE;&#x7247;&#x3002;</li>
+</ol>
+<p>&#x8DDF;&#x7D27;&#x6559;&#x7A0B;&#xFF0C;&#x522B;&#x88AB;&#x5F04;&#x5F97;&quot;&#x56E2;&#x56E2;&#x8F6C;(round in circles)&quot;&#xFF01; :]</p>
+<h2 id="&#x521B;&#x5EFA;&#x5706;&#x5F62;&#x6307;&#x793A;&#x7B26;">&#x521B;&#x5EFA;&#x5706;&#x5F62;&#x6307;&#x793A;&#x7B26;</h2>
+<p>&#x60F3;&#x4E00;&#x60F3;&#x8FDB;&#x5EA6;&#x6307;&#x793A;&#x7684;&#x57FA;&#x672C;&#x8BBE;&#x8BA1;&#xFF0C;&#x8D77;&#x521D;&#x4ECE;&#x7A7A;&#xFF0C;&#x663E;&#x793A;&#x7684;&#x8FDB;&#x5EA6;&#x4E3A; 0%&#xFF0C;&#x7136;&#x540E;&#x968F;&#x7740;&#x56FE;&#x7247;&#x4E0B;&#x8F7D;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x9010;&#x6E10;&#x586B;&#x5145;&#x5230; 100%&#x3002;&#x4F7F;&#x7528; <code>CAShapeLayer</code> &#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x5706;&#x5F62;&#x8DEF;&#x5F84;&#x662F;&#x76F8;&#x5F53;&#x7B80;&#x5355;&#x7684;&#x3002;</p>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x5982;&#x679C;&#x4F60;&#x662F;&#x7B2C;&#x4E00;&#x6B21;&#x63A5;&#x89E6; <code>CAShapeLayer</code> (&#x6216; <code>CALayers</code>)&#xFF0C;&#x53EF;&#x4EE5;&#x5148;&#x770B;&#x770B; Scott Gardner &#x7684; <a href="http://www.raywenderlich.com/90488/calayer-in-ios-with-swift-10-examples" target="_blank">&#x5728; iOS &#x7528; Swift &#x4F7F;&#x7528; CALayer</a> &#x8FD9;&#x7BC7;&#x6559;&#x7A0B;&#x3002;</p>
+</blockquote>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>CAShapeLayer</code> &#x5C5E;&#x6027;&#x7684; <code>strokeStart</code> &#x548C; <code>strokeEnd</code> &#x6765;&#x63A7;&#x5236;&#x56FE;&#x5F62;&#x7684;&#x8F6E;&#x5ED3;&#x6216;  <strong>stroke(&#x7B14;&#x753B;)</strong> &#x7684;&#x5F00;&#x59CB;&#x548C;&#x7ED3;&#x675F;&#x4F4D;&#x7F6E;&#x3002;&#x901A;&#x8FC7;&#x6539;&#x53D8; <code>strokeEnd</code> 0 &#x548C; 1 &#x4E4B;&#x95F4;&#x7684;&#x503C;&#xFF0C;&#x4EE5;&#x8868;&#x793A;&#x4E0B;&#x8F7D;&#x7684;&#x8FDB;&#x5EA6;&#x3002;</p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x8BD5;&#x4E00;&#x4E0B;&#x3002;&#x4ECE; <strong>iOS\Source\Cocoa Touch Class template</strong> &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x6587;&#x4EF6;&#xFF0C;&#x547D;&#x540D;&#x4E3A;&#xFF1A;<code>CircularLoaderView</code>&#xFF0C;&#x7236;&#x7C7B;&#x4E3A; <code>UIView</code>&#xFF1A;</p>
+<p><img src="../assets/animation/circular-image-loader-animation-cashapelayer/Create-New-File-650x466.png" style="width:70%"></p>
+<p>&#x70B9;&#x51FB; <strong>Next</strong>&#xFF0C;&#x7136;&#x540E; <strong>Create</strong>&#x3002;&#x8FD9;&#x4E2A; <code>UIView</code> &#x7684;&#x5B50;&#x7C7B;&#x5C06;&#x4F1A;&#x5305;&#x542B;&#x6240;&#x6709;&#x7684;&#x52A8;&#x753B;&#x4EE3;&#x7801;&#x3002;</p>
+<p>&#x6253;&#x5F00; <strong>CircularLoaderView.swift</strong>&#xFF0C;&#x5C06;&#x4E0B;&#x9762;&#x7684;&#x5C5E;&#x6027;&#x6DFB;&#x52A0;&#x5230;&#x7C7B;&#x91CC;&#x9762;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> circlePathLayer = <span class="hljs-type">CAShapeLayer</span>()
+<span class="hljs-keyword">let</span> circleRadius: <span class="hljs-type">CGFloat</span> = <span class="hljs-number">20.0</span>
+</code></pre>
+<p><code>circlePathLayer</code> &#x8868;&#x793A;&#x5706;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;<code>circleRadius</code> &#x8868;&#x793A;&#x5706;&#x7684;&#x534A;&#x5F84;&#x3002;&#x9AD8;&#x6DF1;&#x7684;&#x95EE;&#x9898;(Rocket science)&#xFF0C;&#x6211;&#x77E5;&#x9053;&#xFF01;</p>
+<p>&#x4E0B;&#x4E00;&#x6B65;&#xFF0C;&#x5728; <code>circleRadius</code> &#x4E0B;&#x65B9;&#x6DFB;&#x52A0;&#x521D;&#x59CB;&#x5316;&#x4EE3;&#x7801;&#x7528;&#x4E8E;&#x914D;&#x7F6E;&#x56FE;&#x5F62;&#x5C42;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">override</span> <span class="hljs-keyword">init</span>(frame: <span class="hljs-type">CGRect</span>) {
+  <span class="hljs-keyword">super</span>.<span class="hljs-keyword">init</span>(frame: frame)
+  configure()
+}
+
+<span class="hljs-keyword">required</span> <span class="hljs-keyword">init</span>?(coder aDecoder: <span class="hljs-type">NSCoder</span>) {
+  <span class="hljs-keyword">super</span>.<span class="hljs-keyword">init</span>(coder: aDecoder)
+  configure()
+}
+
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">configure</span><span class="hljs-params">()</span></span> {
+  circlePathLayer.frame = bounds
+  circlePathLayer.lineWidth = <span class="hljs-number">2</span>
+  circlePathLayer.fillColor = <span class="hljs-type">UIColor</span>.clear.cgColor
+  circlePathLayer.strokeColor = <span class="hljs-type">UIColor</span>.red.cgColor
+  layer.addSublayer(circlePathLayer)
+  backgroundColor = .white
+}
+</code></pre>
+<p>&#x4E24;&#x4E2A;&#x521D;&#x59CB;&#x5316;&#x65B9;&#x6CD5;&#x90FD;&#x8C03;&#x7528;&#x4E86; <code>configure()</code>&#x3002;<code>configure()</code> &#x8BBE;&#x7F6E;&#x4E86; <code>circlePathLayer</code> &#x7684; frame &#x5339;&#x914D; view &#x7684; bounds&#xFF0C;&#x7EBF;&#x5BBD;(line width)&#x4E3A; 2&#xFF0C;&#x900F;&#x660E;&#x7684;&#x586B;&#x5145;&#x8272;&#xFF0C;&#x548C;&#x4E00;&#x4E2A;&#x7EA2;&#x8272;&#x7684;&#x7B14;&#x753B;(stroke)&#x3002;&#x63A5;&#x4E0B;&#x6765;&#x5C06; circlePathLayer &#x6DFB;&#x52A0;&#x5230; view &#x7684;&#x5B50;&#x5C42;&#xFF0C;&#x5E76;&#x5C06; view &#x7684; <code>backgroundColor</code> &#x8BBE;&#x7F6E;&#x4E3A;&#x767D;&#x8272;&#xFF0C;&#x4FBF;&#x4E8E;&#x5728;&#x56FE;&#x7247;&#x52A0;&#x8F7D;&#x65F6;&#x5019;&#x906E;&#x4F4F;&#x5176;&#x4ED6;&#x90E8;&#x5206;&#x3002;</p>
+<h3 id="&#x6DFB;&#x52A0;&#x8DEF;&#x5F84;path">&#x6DFB;&#x52A0;&#x8DEF;&#x5F84;(path)</h3>
+<p>&#x5DF2;&#x7ECF;&#x914D;&#x7F6E;&#x4E86;&#x5C42;&#xFF0C;&#x662F;&#x65F6;&#x5019;&#x8BBE;&#x7F6E;&#x5B83;&#x7684;&#x8DEF;&#x5F84;&#x4E86;&#xFF0C;&#x9996;&#x5148;&#x5728; <code>configure()</code> &#x65B9;&#x6CD5;&#x4E0B;&#x9762;&#x6DFB;&#x52A0;&#x5982;&#x4E0B;&#x8F85;&#x52A9;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">circleFrame</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">CGRect</span> {
+  <span class="hljs-keyword">var</span> circleFrame = <span class="hljs-type">CGRect</span>(x: <span class="hljs-number">0</span>, y: <span class="hljs-number">0</span>, width: <span class="hljs-number">2</span> * circleRadius, height: <span class="hljs-number">2</span> * circleRadius)
+  <span class="hljs-keyword">let</span> circlePathBounds = circlePathLayer.bounds
+  circleFrame.origin.x = circlePathBounds.midX - circleFrame.midX
+  circleFrame.origin.y = circlePathBounds.midY - circleFrame.midY
+  <span class="hljs-keyword">return</span> circleFrame
+}
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x6CD5;&#x8BA1;&#x7B97;&#x6307;&#x793A;&#x7B26;&#x8DEF;&#x5F84;&#x7684; <code>CGRect</code>&#xFF0C;&#x8FB9;&#x754C;&#x7684;&#x5BBD;&#x9AD8;&#x7B49;&#x4E8E; <code>circleRadius</code> &#x7684;&#x4E24;&#x500D;&#xFF0C;&#x4F4D;&#x7F6E;&#x5728; view &#x7684;&#x6B63;&#x4E2D;&#x95F4;&#x3002;&#x5355;&#x72EC;&#x5199;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x6765;&#x5904;&#x7406;&#x8FD9;&#x4E2A;&#x7B80;&#x5355;&#x64CD;&#x4F5C;&#x7684;&#x539F;&#x56E0;&#x662F; view &#x6BCF;&#x6B21;&#x66F4;&#x6539;&#x5927;&#x5C0F;&#x65F6;&#x90FD;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x8BA1;&#x7B97; <code>circleFrame</code>&#x3002;</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x5728; <code>circleFrame()</code> &#x65B9;&#x6CD5;&#x4E0B;&#x9762;&#x6DFB;&#x52A0;&#x521B;&#x5EFA;&#x8DEF;&#x5F84;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">circlePath</span><span class="hljs-params">()</span></span> -&gt; <span class="hljs-type">UIBezierPath</span> {
+  <span class="hljs-keyword">return</span> <span class="hljs-type">UIBezierPath</span>(ovalIn: circleFrame())
+}
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x8FB9;&#x754C;&#x4E3A; <code>circleFrame()</code> &#x7684;&#x5706;&#x5F62; <code>UIBezierPath</code>&#x3002;&#x7531;&#x4E8E; <code>circleFrame()</code> &#x8FD4;&#x56DE;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x6B63;&#x65B9;&#x5F62;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x7684;&quot;&#x692D;&#x5706;&#x5F62;&quot;&#x4F1A;&#x662F;&#x4E00;&#x4E2A;&#x5706;&#x5F62;&#x3002;</p>
+<p>&#x5C42;(layer)&#x6CA1;&#x6709; <code>autoresizingMask</code> &#x5C5E;&#x6027;&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x91CD;&#x5199; <code>layoutSubviews</code> &#x4EE5;&#x76F8;&#x5E94; view &#x5927;&#x5C0F;&#x7684;&#x6539;&#x53D8;&#x3002;</p>
+<p>&#x91CD;&#x5199; <code>layoutSubviews()</code>&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">layoutSubviews</span><span class="hljs-params">()</span></span> {
+  <span class="hljs-keyword">super</span>.layoutSubviews()
+  circlePathLayer.frame = bounds
+  circlePathLayer.path = circlePath().cgPath
+}
+</code></pre>
+<p>&#x5728;&#x8FD9;&#x91CC;&#x8C03;&#x7528; <code>circlePath()</code> &#x65B9;&#x6CD5;&#x56E0;&#x4E3A; frame &#x6539;&#x53D8;&#x65F6;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x8BA1;&#x7B97;&#x8DEF;&#x5F84;&#x3002;</p>
+<p>&#x6253;&#x5F00; <strong>CustomImageView.swift</strong>&#xFF0C;&#x5728;&#x7C7B;&#x91CC;&#x6DFB;&#x52A0;&#x4E0B;&#x9762;&#x5C5E;&#x6027;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> progressIndicatorView = <span class="hljs-type">CircularLoaderView</span>(frame: .zero)
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x662F;&#x521A;&#x521A;&#x521B;&#x5EFA;&#x7684; <code>CircularLoaderView</code> &#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x3002;</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x5728; <code>init(coder:)</code> &#x65B9;&#x6CD5;&#x91CC;&#xFF0C;<code>let url...</code> &#x8BED;&#x53E5;&#x4E4B;&#x524D;&#x6DFB;&#x52A0;&#x4E0B;&#x9762;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-swift">addSubview(progressIndicatorView)
+
+addConstraints(<span class="hljs-type">NSLayoutConstraint</span>.constraints(
+  withVisualFormat: <span class="hljs-string">&quot;V:|[v]|&quot;</span>, options: .<span class="hljs-keyword">init</span>(rawValue: <span class="hljs-number">0</span>),
+  metrics: <span class="hljs-literal">nil</span>, views: [<span class="hljs-string">&quot;v&quot;</span>: progressIndicatorView]))
+addConstraints(<span class="hljs-type">NSLayoutConstraint</span>.constraints(
+  withVisualFormat: <span class="hljs-string">&quot;H:|[v]|&quot;</span>, options: .<span class="hljs-keyword">init</span>(rawValue: <span class="hljs-number">0</span>),
+  metrics: <span class="hljs-literal">nil</span>, views:  [<span class="hljs-string">&quot;v&quot;</span>: progressIndicatorView]))
+progressIndicatorView.translatesAutoresizingMaskIntoConstraints = <span class="hljs-literal">false</span>
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x5C06;&#x8FDB;&#x5EA6;&#x6307;&#x793A;&#x7B26;&#x6DFB;&#x52A0;&#x5230; CustomImageView &#x7684;&#x5B50;&#x89C6;&#x56FE;&#x3002;&#x7136;&#x540E;&#x6DFB;&#x52A0;&#x4E24;&#x4E2A;&#x5E03;&#x5C40;&#x7EA6;&#x675F;&#xFF0C;&#x786E;&#x4FDD;&#x6307;&#x793A;&#x7B26;&#x548C; ImageView &#x7684;&#x5C3A;&#x5BF8;&#x5927;&#x5C0F;&#x76F8;&#x540C;&#x3002;&#x6700;&#x540E;&#x5C06; <code>translatesAutoresizingMaskIntoConstraints</code> &#x8BBE;&#x7F6E;&#x4E3A; <code>false</code>&#xFF0C;&#x8FD9;&#x6837;  Autoresizing Mask &#x4E0D;&#x4F1A;&#x5F71;&#x54CD; Auto Layout &#x5F15;&#x64CE;&#x3002;</p>
+<p>&#x8FD0;&#x884C;&#x9879;&#x76EE;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x4F1A;&#x770B;&#x5230;&#x4E00;&#x4E2A;&#x7EA2;&#x7684;&#x7A7A;&#x5FC3;&#x5706;&#x5708;&#xFF0C;&#x50CF;&#x8FD9;&#x6837;&#xFF1A;</p>
+<p><img src="../assets/animation/circular-image-loader-animation-cashapelayer/Screen-Shot-2017-08-14-at-1.16.43-PM.png" style="width:40%"></p>
+<p>&#x592A;&#x68D2;&#x4E86;&#xFF01;&#x8FDB;&#x5EA6;&#x6307;&#x793A;&#x7B26;&#x51FA;&#x73B0;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x4E86;&#x3002;</p>
+<h3 id="&#x4FEE;&#x6539;-stroke-&#x957F;&#x5EA6;">&#x4FEE;&#x6539; Stroke &#x957F;&#x5EA6;</h3>
+<p>&#x6253;&#x5F00; <strong>CircularLoaderView.swift</strong>&#xFF0C;&#x5728;&#x5176;&#x4ED6;&#x5C5E;&#x6027;&#x8BED;&#x53E5;&#x4E0B;&#x9762;&#x6DFB;&#x52A0;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">var</span> progress: <span class="hljs-type">CGFloat</span> {
+  <span class="hljs-keyword">get</span> {
+    <span class="hljs-keyword">return</span> circlePathLayer.strokeEnd
+  }
+  <span class="hljs-keyword">set</span> {
+    <span class="hljs-keyword">if</span> newValue &gt; <span class="hljs-number">1</span> {
+      circlePathLayer.strokeEnd = <span class="hljs-number">1</span>
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> newValue &lt; <span class="hljs-number">0</span> {
+      circlePathLayer.strokeEnd = <span class="hljs-number">0</span>
+    } <span class="hljs-keyword">else</span> {
+      circlePathLayer.strokeEnd = newValue
+    }
+  }
+}
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;<strong>&#x8BA1;&#x7B97;&#x5C5E;&#x6027;(computed property)</strong>&#xFF0C;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x6CA1;&#x6709;&#x5B58;&#x50A8;&#x503C;(backing variable)&#xFF0C;&#x53EA;&#x5B9A;&#x4E49;&#x4E86; setter &#x548C; getter&#x3002;getter &#x8FD4;&#x56DE; <code>circlePathLayer.strokeEnd</code>&#xFF0C;setter &#x9A8C;&#x8BC1;&#x8F93;&#x5165;&#x7684; 0 &#x5230; 1 &#x4E4B;&#x95F4;&#x7684;&#x503C;&#xFF0C;&#x5E76;&#x76F8;&#x5E94;&#x7684;&#x8BBE;&#x7F6E;&#x5C42;&#x7684; <code>strokeEnd</code> &#x5C5E;&#x6027;&#x3002;</p>
+<p>&#x5728; <code>configure()</code> &#x91CC;&#x6DFB;&#x52A0; <code>progress</code> &#x521D;&#x59CB;&#x5316;&#x8FDB;&#x5EA6;&#xFF1A;</p>
+<pre><code class="lang-swift">progress = <span class="hljs-number">0</span>
+</code></pre>
+<p>&#x8FD0;&#x884C;&#x4E4B;&#x540E;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x4F1A;&#x770B;&#x5230;&#x4E00;&#x4E2A;&#x7A7A;&#x767D;&#x7684;&#x5C4F;&#x5E55;&#xFF0C;&#x76F8;&#x4FE1;&#x6211;&#xFF01;&#x8FD9;&#x6CA1;&#x9519;&#x7684;&#xFF01; :]  &#x8BBE;&#x7F6E; <code>progress</code> &#x4E3A; 0 &#x7B49;&#x4E8E;&#x5C06; <code>strokeEnd</code> &#x8BBE;&#x7F6E;&#x4E3A; 0&#xFF0C;&#x8FD9;&#x8868;&#x793A;&#x56FE;&#x5F62;&#x5C42;&#x6CA1;&#x6709;&#x7ED8;&#x5236;&#x4EFB;&#x4F55;&#x4E1C;&#x897F;&#x3002;</p>
+<p><img src="../assets/animation/circular-image-loader-animation-cashapelayer/Screen-Shot-2017-08-14-at-1.15.43-PM.png" style="width:40%"></p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x8981;&#x5728;&#x56FE;&#x7247;&#x4E0B;&#x8F7D;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4E0A;&#x66F4;&#x65B0;&#x6307;&#x793A;&#x7B26;&#x7684; <code>progress</code>&#x3002;</p>
+<p>&#x6253;&#x5F00; <strong>CustomImageView.swift</strong>&#xFF0C;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x66FF;&#x6362; <code>Update progress here</code>&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">self</span>?.progressIndicatorView.progress = <span class="hljs-type">CGFloat</span>(receivedSize) / <span class="hljs-type">CGFloat</span>(expectedSize)
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x901A;&#x8FC7; <code>receivedSize</code> &#x9664;&#x4EE5; <code>expectedSize</code> &#x8BA1;&#x7B97;&#x8FDB;&#x5EA6;&#x3002;</p>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x6CE8;&#x610F;&#x5230; self &#x5728; block &#x91CC;&#x9762;&#x4F7F;&#x7528;&#x4E86;&#x5F31;&#x5F15;&#x7528;&#xFF0C;&#x8FD9;&#x662F;&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x5FAA;&#x73AF;&#x5F15;&#x7528;&#x3002;</p>
+</blockquote>
+<p>&#x8FD0;&#x884C; App&#xFF0C;&#x4F60;&#x4F1A;&#x770B;&#x5230;&#x6307;&#x793A;&#x7B26;&#x7684;&#x8FDB;&#x5EA6;&#x50CF;&#x8FD9;&#x6837;&#x5F00;&#x59CB;&#x52A8;&#x4E86;&#xFF1A;</p>
+<p><img src="../assets/animation/circular-image-loader-animation-cashapelayer/contentoffset-1.gif" style="width:50%"></p>
+<p>&#x5373;&#x4F7F;&#x6CA1;&#x6709;&#x6DFB;&#x52A0;&#x4EFB;&#x4F55;&#x52A8;&#x753B;&#x4EE3;&#x7801;&#xFF0C;<code>CALayer</code> &#x4E5F;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x5728;&#x56FE;&#x5C42;&#x4E0A;&#x4F7F;&#x7528;&#x4EFB;&#x610F;&#x52A8;&#x753B;&#x5C5E;&#x6027;&#xFF0C;&#x968F;&#x7740;&#x53D8;&#x5316;&#x800C;&#x81EA;&#x7136;&#x7684;&#x8FC7;&#x5EA6;&#x52A8;&#x753B;&#x3002;&#x6E05;&#x6670;&#x65B9;&#x4FBF;&#xFF01;</p>
+<p>&#x73B0;&#x5728;&#x5B8C;&#x6210;&#x4E86;&#x7B2C;&#x4E00;&#x9636;&#x6BB5;&#xFF0C;&#x51C6;&#x5907;&#x5F00;&#x59CB;&#x7B2C;&#x4E8C;&#x9636;&#x6BB5;&#xFF0C;&#x4E5F;&#x662F;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x9636;&#x6BB5; &#x2014;&#x2014; &#x5927;&#x63ED;&#x793A;&#xFF01; :]</p>
+<h2 id="&#x521B;&#x5EFA;&#x63ED;&#x793A;reveal&#x52A8;&#x753B;">&#x521B;&#x5EFA;&#x63ED;&#x793A;(reveal)&#x52A8;&#x753B;</h2>
+<p>&#x63ED;&#x793A;&#x8FC7;&#x7A0B;&#x662F;&#x4E0D;&#x65AD;&#x901A;&#x8FC7;&#x6269;&#x5927;&#x5706;&#x73AF;&#x6765;&#x63ED;&#x793A;&#x56FE;&#x7247;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x770B;&#x8FC7;&#x8FD9;&#x7BC7; <a href="http://www.raywenderlich.com/86521/how-to-make-a-view-controller-transition-animation-like-in-the-ping-app" target="_blank">&#x6784;&#x5EFA;&#x4E00;&#x4E2A; Ping &#x98CE;&#x683C;&#x7684; View Conroller &#x52A8;&#x753B;</a> &#x6559;&#x7A0B;&#xFF0C;&#x4F60;&#x5C31;&#x4F1A;&#x77E5;&#x9053; <code>CALayer</code> &#x7684; <code>mask</code> &#x5C5E;&#x6027;&#x662F;&#x591A;&#x4E48;&#x7684;&#x5B9E;&#x7528;&#x3002;</p>
+<p>&#x6253;&#x5F00; <strong>CircularLoaderView.swift</strong>&#xFF0C;&#x6DFB;&#x52A0;&#x4E0B;&#x9762;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">reveal</span><span class="hljs-params">()</span></span> {
+  <span class="hljs-comment">// 1</span>
+  backgroundColor = .clear
+  progress = <span class="hljs-number">1</span>
+  <span class="hljs-comment">// 2</span>
+  circlePathLayer.removeAnimation(forKey: <span class="hljs-string">&quot;strokeEnd&quot;</span>)
+  <span class="hljs-comment">// 3</span>
+  circlePathLayer.removeFromSuperlayer()
+  superview?.layer.mask = circlePathLayer
+}
+</code></pre>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x4E00;&#x6B65;&#x4E00;&#x6B65;&#x7684;&#x5206;&#x6790;&#x8FD9;&#x4E2A;&#x91CD;&#x8981;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<ol>
+<li>&#x5C06; view &#x7684;&#x80CC;&#x666F;&#x989C;&#x8272;&#x6E05;&#x9664;&#x4E86;&#xFF0C;&#x4F7F; view &#x540E;&#x9762;&#x7684;&#x56FE;&#x7247;&#x4E0D;&#x5728;&#x9690;&#x85CF;&#xFF0C;&#x5E76;&#x5C06; <code>progress</code> &#x8BBE;&#x4E3A; 1&#x3002;</li>
+<li>&#x79FB;&#x9664; <code>strokeEnd</code> &#x5C5E;&#x6027;&#xFF0C;&#x9632;&#x6B62;&#x6709;&#x4EFB;&#x4F55;&#x5F85;&#x5904;&#x7406;&#x7684;&#x9690;&#x5F0F;&#x52A8;&#x753B;(implicit animations)&#x6765;&#x5E72;&#x6270;&#x63A5;&#x4E0B;&#x6765;&#x8981;&#x6267;&#x884C;&#x7684;&#x52A8;&#x753B;&#x3002;&#x60F3;&#x4E86;&#x89E3;&#x66F4;&#x591A;&#x9690;&#x5F0F;&#x52A8;&#x753B;&#xFF0C;&#x53EF;&#x770B; <a href="http://www.raywenderlich.com/store/ios-animations-by-tutorials" target="_blank">iOS &#x52A8;&#x753B;&#x6559;&#x7A0B;</a>&#x3002;</li>
+<li>&#x4ECE; <code>superLayer</code> &#x79FB;&#x9664; <code>circlePathLayer</code>&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x4F5C;&#x4E3A; <code>superView</code> &#x7684;&#x56FE;&#x5C42;&#x8499;&#x7248;&#xFF0C;&#x8FD9;&#x6837;&#x56FE;&#x7247;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&quot;&#x5706;&#x5B54;&quot;&#x900F;&#x51FA;&#x6765;&#x4E86;&#x3002;&#x8FD9;&#x91CC;&#x91CD;&#x590D;&#x4F7F;&#x7528;&#x73B0;&#x6709;&#x5C42;&#xFF0C;&#x907F;&#x514D;&#x51FA;&#x73B0;&#x91CD;&#x590D;&#x4EE3;&#x7801;&#x3002;</li>
+</ol>
+<p>&#x7528;&#x4E0B;&#x9762;&#x7684;&#x6267;&#x884C; <code>reveal()</code> &#x7684;&#x4EE3;&#x7801;&#x66FF;&#x6362; <strong>CustomImageView.swift</strong> &#x7684; <code>Reveal image here</code> &#x6CE8;&#x91CA;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> error = error {
+  <span class="hljs-built_in">print</span>(error)
+}
+<span class="hljs-keyword">self</span>?.progressIndicatorView.reveal()
+</code></pre>
+<p>&#x8FD0;&#x884C; App&#xFF0C;&#x56FE;&#x7247;&#x52A0;&#x8F7D;&#x5B8C;&#x6BD5;&#x4E4B;&#x540E;&#xFF0C;&#x4F60;&#x4F1A;&#x900F;&#x8FC7;&#x90A3;&#x4E2A;&#x5C0F;&#x73AF;&#x7684;&#x5730;&#x65B9;&#x770B;&#x5230;&#x56FE;&#x7247;&#xFF1A;</p>
+<p><img src="../assets/animation/circular-image-loader-animation-cashapelayer/Screen-Shot-2017-08-14-at-1.12.32-PM.png" style="width:40%"></p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x80CC;&#x540E;&#x7684;&#x56FE;&#x7247;&#x7684;&#xFF0C;&#x4F46;&#x53EA;&#x662F;&#x4E00;&#x70B9;&#x70B9;&#xFF01; :]</p>
+<h3 id="&#x6269;&#x5927;&#x5708;&#x8303;&#x56F4;">&#x6269;&#x5927;&#x5708;&#x8303;&#x56F4;</h3>
+<p>&#x4E0B;&#x4E00;&#x6B65;&#x9700;&#x8981;&#x5C06;&#x8FD9;&#x4E2A;&#x5706;&#x73AF;&#x540C;&#x65F6;&#x5411;&#x5185;&#x5411;&#x5916;&#x6269;&#x5C55;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E24;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x540C;&#x5FC3; <code>UIBezierPath</code> &#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x6548;&#x679C;&#xFF0C;&#x4F46;&#x8FD9;&#x91CC;&#x6709;&#x4E00;&#x4E2A;&#x66F4;&#x6709;&#x6548;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x7528;&#x4E00;&#x4E2A; <code>UIBezierPath</code>&#x3002;</p>
+<p>&#x600E;&#x4E48;&#x6837;&#xFF1F;&#x53EA;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x4FEE;&#x6539;<code>&#x8DEF;&#x5F84;(path)</code>&#x5C5E;&#x6027;&#xFF0C;&#x5728;&#x589E;&#x52A0;&#x5706;&#x5411;&#x5916;&#x6269;&#x5C55;&#x534A;&#x5F84;&#x7684;&#x540C;&#x65F6;&#x589E;&#x52A0;&#x7EBF;&#x5BBD;(line width)&#x4F7F;&#x5706;&#x73AF;&#x66F4;&#x539A;&#xFF0C;&#x6700;&#x7EC8;&#x8FD9;&#x4E24;&#x4E2A;&#x503C;&#x7ED3;&#x5408;&#x80FD;&#x591F;&#x8DB3;&#x4EE5;&#x663E;&#x793A;&#x6574;&#x5F20;&#x56FE;&#x7247;&#x3002;</p>
+<p>&#x6253;&#x5F00; <strong>CircularLoaderView.swift</strong>&#xFF0C;&#x7EE7;&#x7EED;&#x5728; <code>reveal()</code> &#x91CC;&#x6DFB;&#x52A0;&#x4E0B;&#x9762;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="hljs-comment">// 1</span>
+<span class="hljs-keyword">let</span> center = <span class="hljs-type">CGPoint</span>(x: bounds.midX, y: bounds.midY)
+<span class="hljs-keyword">let</span> finalRadius = sqrt((center.x*center.x) + (center.y*center.y))
+<span class="hljs-keyword">let</span> radiusInset = finalRadius - circleRadius
+<span class="hljs-keyword">let</span> outerRect = circleFrame().insetBy(dx: -radiusInset, dy: -radiusInset)
+<span class="hljs-keyword">let</span> toPath = <span class="hljs-type">UIBezierPath</span>(ovalIn: outerRect).cgPath
+
+<span class="hljs-comment">// 2</span>
+<span class="hljs-keyword">let</span> fromPath = circlePathLayer.path
+<span class="hljs-keyword">let</span> fromLineWidth = circlePathLayer.lineWidth
+
+<span class="hljs-comment">// 3</span>
+<span class="hljs-type">CATransaction</span>.begin()
+<span class="hljs-type">CATransaction</span>.setValue(kCFBooleanTrue, forKey: kCATransactionDisableActions)
+circlePathLayer.lineWidth = <span class="hljs-number">2</span>*finalRadius
+circlePathLayer.path = toPath
+<span class="hljs-type">CATransaction</span>.commit()
+
+<span class="hljs-comment">// 4</span>
+<span class="hljs-keyword">let</span> lineWidthAnimation = <span class="hljs-type">CABasicAnimation</span>(keyPath: <span class="hljs-string">&quot;lineWidth&quot;</span>)
+lineWidthAnimation.fromValue = fromLineWidth
+lineWidthAnimation.toValue = <span class="hljs-number">2</span>*finalRadius
+<span class="hljs-keyword">let</span> pathAnimation = <span class="hljs-type">CABasicAnimation</span>(keyPath: <span class="hljs-string">&quot;path&quot;</span>)
+pathAnimation.fromValue = fromPath
+pathAnimation.toValue = toPath
+
+<span class="hljs-comment">// 5</span>
+<span class="hljs-keyword">let</span> groupAnimation = <span class="hljs-type">CAAnimationGroup</span>()
+groupAnimation.duration = <span class="hljs-number">1</span>
+groupAnimation.timingFunction = <span class="hljs-type">CAMediaTimingFunction</span>(name: kCAMediaTimingFunctionEaseInEaseOut)
+groupAnimation.animations = [pathAnimation, lineWidthAnimation]
+circlePathLayer.add(groupAnimation, forKey: <span class="hljs-string">&quot;strokeWidth&quot;</span>)
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x7684;&#x4EE3;&#x7801;&#x770B;&#x4F3C;&#x5F88;&#x591A;&#xFF0C;&#x4F46;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x5F88;&#x7B80;&#x5355;&#xFF1A;</p>
+<ol>
+<li>&#x8FD9;&#x91CC;&#x8BA1;&#x7B97;&#x4E86; ImageView &#x5916;&#x5207;&#x5706;&#x7684;&#x534A;&#x5F84;&#xFF0C;&#x5E76;&#x4F7F;&#x7528;&#x5B83;&#x6765;&#x8BA1;&#x7B97;&#x4E86;&#x6B64;&#x5706;&#x8FB9;&#x754C;&#x7684; <code>CGRect</code>&#x3002;<code>toPath</code> &#x8868;&#x793A; <code>CAShapeLayer</code> &#x906E;&#x7F69;&#x5C42;&#x6700;&#x7EC8;&#x5F62;&#x72B6;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</li>
+</ol>
+<p><img src="../assets/animation/circular-image-loader-animation-cashapelayer/photo-loading-diagram.png" style="width:50%"></p>
+<ol>
+<li>&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7684; <code>lineWidth</code> &#x548C; <code>path</code> &#x521D;&#x59CB;&#x503C;&#x3002;</li>
+<li>&#x8BBE;&#x7F6E; <code>lineWidth</code> &#x548C; <code>path</code> &#x6700;&#x7EC8;&#x503C;&#xFF0C;&#x8FD9;&#x91CC;&#x9632;&#x6B62;&#x52A8;&#x753B;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#x8DF3;&#x56DE;&#x539F;&#x59CB;&#x503C;&#x3002;&#x628A; <code>CATransaction</code> &#x7684; <code>kCATransactionDisableActions</code> &#x8BBE;&#x7F6E;&#x4E3A; <code>true</code> &#x53EF;&#x7981;&#x7528;&#x5C42;&#x7684;&#x9690;&#x5F0F;&#x52A8;&#x753B;&#x3002;</li>
+<li>&#x521B;&#x5EFA;&#x4E86; <code>path</code> &#x548C; <code>lineWidth</code> &#x7684; <code>CABasicAnimation</code> &#x5B9E;&#x4F8B;&#x3002;&#x5176;&#x4E2D;&#x4E3A;&#x4E86;&#x8BA9;&#x5706;&#x80FD;&#x5411;&#x5185;&#x548C;&#x5411;&#x5916;&#x6269;&#x5C55;&#xFF0C;<code>lineWidth</code> &#x5FC5;&#x987B;&#x662F;&#x534A;&#x5F84;&#x7684;&#x4E24;&#x500D;&#xFF08;&#x7684;&#x901F;&#x5EA6;&#xFF09;&#x3002; </li>
+<li>&#x628A;&#x8FD9; 2 &#x4E2A;&#x52A8;&#x753B;&#x6DFB;&#x52A0;&#x5230; <code>CAAnimationGroup</code>&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x52A8;&#x753B;&#x7EC4;(animation group)&#x6DFB;&#x52A0;&#x5230;&#x56FE;&#x5C42;&#x3002;</li>
+</ol>
+<p>&#x8FD0;&#x884C; App&#xFF0C;&#x56FE;&#x7247;&#x4E0B;&#x8F7D;&#x5B8C;&#x6BD5;&#x4E4B;&#x540E;&#x4F60;&#x4F1A;&#x770B;&#x5230;&#x5982;&#x4E0B;&#x7684;&#x63ED;&#x793A;&#x52A8;&#x753B;&#xFF1A;</p>
+<p><img src="../assets/animation/circular-image-loader-animation-cashapelayer/Screen-Shot-2017-08-14-at-1.08.08-PM.png" style="width:40%"></p>
+<p>&#x5F53;&#x52A8;&#x753B;&#x5B8C;&#x6210;&#x540E;&#x4F60;&#x4F1A;&#x53D1;&#x73B0;&#x6709;&#x90E8;&#x5206;&#x5706;&#x8FD8;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#xFF0C;&#x8981;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x4E0B;&#x9762;&#x7684;&#x6269;&#x5C55;&#x6DFB;&#x52A0; <strong>CircularLoaderView.swift</strong> &#x5C3E;&#x90E8;&#xFF0C;&#x5E76;&#x5B9E;&#x73B0; <code>animationDidStop(_:finished:)</code>&#xFF1A;</p>
+<pre><code class="lang-swift"><span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">CircularLoaderView</span>: <span class="hljs-title">CAAnimationDelegate</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">animationDidStop</span><span class="hljs-params">(<span class="hljs-number">_</span> anim: CAAnimation, finished flag: Bool)</span></span> {
+    superview?.layer.mask = <span class="hljs-literal">nil</span>
+  }
+}
+</code></pre>
+<p>&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x662F;&#x4ECE; super layer &#x79FB;&#x9664;&#x906E;&#x7F69;&#x5C42;&#x3002;</p>
+<p>&#x6700;&#x540E;&#x5728; <code>reveal()</code> &#x91CC;&#xFF0C;<code>circlePathLayer.add(groupAnimation, forKey: &quot;strokeWidth&quot;)</code> &#x8BED;&#x53E5;&#x524D;&#x9762;&#xFF0C;&#x6DFB;&#x52A0;&#xFF1A;</p>
+<pre><code class="lang-swift">groupAnimation.delegate = <span class="hljs-keyword">self</span>
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x8BBE;&#x7F6E;&#x4E86;&#x59D4;&#x6258;&#xFF0C;&#x4EE5;&#x4FBF; <code>animationDidStop(_:finished:)</code> &#x88AB;&#x6267;&#x884C;&#x3002;</p>
+<p>&#x8FD0;&#x884C; App&#xFF0C;&#x4F60;&#x4F1A;&#x770B;&#x5230;&#x52A8;&#x753B;&#x5B8C;&#x6574;&#x7684;&#x6548;&#x679C;&#xFF1A;</p>
+<p><img src="../assets/animation/circular-image-loader-animation-cashapelayer/contentoffset.gif" style="width:50%"></p>
+<p>&#x606D;&#x559C;&#xFF0C;&#x4F60;&#x5B8C;&#x6210;&#x4E86;&#x5706;&#x5F62;&#x56FE;&#x50CF;&#x52A0;&#x8F7D;&#x52A8;&#x753B;&#xFF01;</p>
+<h2 id="&#x4F55;&#x53BB;&#x4F55;&#x4ECE;&#xFF1F;">&#x4F55;&#x53BB;&#x4F55;&#x4ECE;&#xFF1F;</h2>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x8FD9;&#x91CC;&#x4E0B;&#x8F7D;&#x5230;&#x6B64;&#x6B21;&#x6559;&#x7A0B;&#x7684;<a href="https://koenig-media.raywenderlich.com/uploads/2017/07/ImageLoaderIndicator-Final-1.zip" target="_blank">&#x5B8C;&#x6574;&#x4EE3;&#x7801;</a>&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x4F60;&#x7684;&#x9700;&#x8981;&#x548C;&#x4E2A;&#x4EBA;&#x7684;&#x8BBE;&#x8BA1;&#x8981;&#x6C42;&#x8FDB;&#x4E00;&#x6B65;&#x7684;&#x8C03;&#x6574;&#x52A8;&#x753B;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x66F2;&#x7EBF;&#x548C;&#x989C;&#x8272;&#x3002;&#x6709;&#x4E00;&#x4E2A;&#x53EF;&#x80FD;&#x7684;&#x6539;&#x8FDB;&#x662F;&#x628A;&#x56FE;&#x5F62;&#x5C42;&#x7684; <code>lineCap</code> &#x5C5E;&#x6027;&#x8BBE;&#x7F6E;&#x4E3A; <code>kCALineCapRound</code>&#xFF0C;&#x9010;&#x6E10;&#x7684;&#x53BB;&#x6389;&#x5706;&#x5F62;&#x8FDB;&#x5EA6;&#x6761;&#x7684;&#x5C3E;&#x7AEF;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#x770B;&#x770B;&#x4F60;&#x80FD;&#x60F3;&#x51FA;&#x600E;&#x6837;&#x7684;&#x6539;&#x8FDB;&#xFF01;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x559C;&#x6B22;&#x8FD9;&#x6B21; <code>CAShapeLayer</code> &#x6559;&#x7A0B;&#xFF0C;&#x5E76;&#x4E14;&#x60F3;&#x5B66;&#x4E60;&#x548C;&#x521B;&#x5EFA;&#x66F4;&#x591A;&#x7C7B;&#x4F3C;&#x7684;&#x52A8;&#x753B;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x770B; Marin Todorov &#x7684;&#x4E66;&#xFF1A;<a href="http://www.raywenderlich.com/store/ios-animations-by-tutorials" target="_blank">iOS &#x52A8;&#x753B;&#x6559;&#x7A0B;</a>&#xFF0C;&#x4ECE;&#x57FA;&#x7840;&#x7684; view animation(&#x89C6;&#x56FE;&#x52A8;&#x753B;)&#xFF0C;&#x5230; layer animation(&#x56FE;&#x5C42;&#x52A8;&#x753B;)&#xFF0C;animating constraint(&#x52A8;&#x753B;&#x7EA6;&#x675F;)&#xFF0C;view controller transition(&#x89C6;&#x56FE;&#x63A7;&#x5236;&#x5668;&#x7684;&#x8FC7;&#x5EA6;&#x52A8;&#x753B;) &#x7B49;&#x7B49;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x6709;&#x4EFB;&#x4F55;&#x5173;&#x4E8E;&#x672C;&#x6559;&#x7A0B;&#x7684;&#x95EE;&#x9898;&#x548C;&#x610F;&#x89C1;&#xFF0C;&#x53EF;&#x5728;&#x4E0B;&#x65B9;&#x8BC4;&#x8BBA;&#x3002;&#x6211;&#x5341;&#x5206;&#x671F;&#x5F85;&#x80FD;&#x770B;&#x5230;&#x4F60;&#x5C06;&#x5982;&#x6B64;&#x9177;&#x7684;&#x52A8;&#x753B;&#x6548;&#x679C;&#x6DFB;&#x52A0;&#x5230;&#x4F60;&#x7684; App &#x91CC;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../animation.html" class="navigation navigation-prev " aria-label="Previous page: Animation">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../function.html" class="navigation navigation-next " aria-label="Next page: Function">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"如何使用 CAShapeLayer 实现圆形图像加载动画","level":"1.2.1","depth":2,"next":{"title":"Function","level":"1.3","depth":1,"path":"function.md","ref":"function.md","articles":[{"title":"iOS 实时流通讯","level":"1.3.1","depth":2,"path":"function/real-time-communication-with-streams-tutorial-for-ios.md","ref":"function/real-time-communication-with-streams-tutorial-for-ios.md","articles":[]},{"title":"iOS 11 自动填充密码","level":"1.3.2","depth":2,"path":"function/ios-11-password-autofill.md","ref":"function/ios-11-password-autofill.md","articles":[]}]},"previous":{"title":"Animation","level":"1.2","depth":1,"path":"animation.md","ref":"animation.md","articles":[{"title":"如何使用 CAShapeLayer 实现圆形图像加载动画","level":"1.2.1","depth":2,"path":"animation/implement-circular-image-loader-animation-cashapelayer.md","ref":"animation/implement-circular-image-loader-animation-cashapelayer.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Alex Tse","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"iOS 教程, iOS Tutorial","links":{"sidebar":{"Alex Tse":"https://github.com/ixiemin/iOS-Tutorial"}},"gitbook":"*","description":"iOS 教程, iOS Tutorial"},"file":{"path":"animation/implement-circular-image-loader-animation-cashapelayer.md","mtime":"2017-08-29T09:02:15.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-08-29T09:14:47.516Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
